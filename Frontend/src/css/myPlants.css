@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    font-family: sans-serif;
+    text-align: center; /* Centers text */
+    margin: 0;          /* Remove default page margins */
+    background-color: #F9F9F9; /* light background */
+}
+
+header, footer {
+    background-color: #2e3d30; /* Asparagus green color */
+    color: #FFDAB9;            /* Peach text color */
+    padding: 15px 0;
+    width: 100%;               /* Full width */
+}
+
+.white-link { color: #fff; }
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;   /* white links */
+    text-decoration: none;
+}
+
+/* Main Content Styling */
+.my-plants-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffd9b3; /* Peach background for content area */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.my-plants-container h2 {
+    color: #2e3d30; /* Asparagus green */
+    margin-bottom: 15px;
+}
+
+.plant-item {
+  display: flex;         /* Use flexbox for easy side-by-side layout */
+  align-items: center;   /* Vertically center elements */
+  border: 1px solid var(--primary-color); /* Sage green border */
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.plant-item img {
+  width: 80px;          /* Adjust image size as needed */
+  height: 80px;
+  object-fit: cover;    /* Maintain aspect ratio if image is resized */
+  margin-right: 15px;
+}
+
+.plant-info {
+  flex-grow: 1;         /* Allow the info section to take up remaining space */
+}
+
+.delete-button {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+
+  /*
+  plant mourning popup
+  */
+
+  .hidden {
+      display: none;
+  }
+
+  #plant-mourning-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 100;               /* Ensure it's on top */
+}
